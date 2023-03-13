@@ -1,0 +1,15 @@
+{"CZT":{"Actor":{
+  
+  "NamePlaceholder": "Имя персонажа",
+  "Name": "Имя",
+  
+  "Inventory": {
+    "itWeapons": "Оружие",
+    "itArmor": "Броня",
+    "itEquips": "Снаряжение",
+    "itNoWeapons": "Нет оружия",
+    "itNoArmor": "Нет брони",
+    "itNoEquips": "Нет снаряжения"
+  }
+
+}}}

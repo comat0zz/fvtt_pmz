@@ -1,0 +1,12 @@
+# IDE
+*.code-workspace
+.vscode/
+
+# Node Modules
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Other tools
+*.zip
+

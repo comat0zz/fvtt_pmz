@@ -1,0 +1,46 @@
+{
+  "id": "pmz",
+  "title": "Пока мы здесь",
+  "description": "В рамках данной игры смертельно больные герои будут исполнять сокровенные мечты и исправлять гнетущие ошибки прошлого, пытаясь успеть как можно больше перед неминуемой гибелью, которой и завершится история.",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.291"
+  },
+  "authors": [
+    {
+      "name": "Nikita Belov",
+      "email": "comAT0Zz@gmail.com",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/index.mjs"
+  ],
+  "styles": [
+    "styles/index.css"
+  ],
+  "packs": [
+    {
+      "name": "goals",
+      "label": "Цели",
+      "system": "pmz",
+      "path": "packs/goals.db",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "lang/ru.json",
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "url": "https://github.com/comat0zz/pmz",
+  "manifest": "https://github.com/comat0zz/pmz/releases/latest/download/system.json",
+  "download": "https://github.com/comat0zz/pmz/releases/latest/download/pmz.zip"
+}

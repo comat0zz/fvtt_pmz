@@ -1,0 +1,14 @@
+{
+"Item": {
+    "types": [
+      "elements",
+      "goals"
+    ],
+    "elements": {
+    },
+    "goals": {
+      "description": ""
+    }
+    
+  }
+}

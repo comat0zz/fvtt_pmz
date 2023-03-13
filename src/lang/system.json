@@ -1,0 +1,10 @@
+{
+  "ACTOR": {
+    "TypeHero": "Карточка игры"
+  },
+
+  "ITEM": {
+    "TypeElements": "Элемент",
+    "TypeGoals": "Цель"
+  }
+}

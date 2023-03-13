@@ -1,0 +1,58 @@
+{
+  "Actor": {
+    "types": [
+      "hero"
+    ],
+    "templates": {
+      "baseActor": {
+        "description": "",
+        "skills": []
+      }
+    },
+    "hero": {
+      "subHeroes": {
+        "hero1": {
+          "name": "",
+          "concept": "",
+          "memorabilia": "",
+          "cubeLive": 5,
+          "goals": {
+            "one": "",
+            "two": ""
+          }
+        },
+        "hero2": {
+          "name": "",
+          "concept": "",
+          "memorabilia": "",
+          "cubeLive": 5,
+          "goals": {
+            "one": "",
+            "two": ""
+          }
+        }
+      },
+      "pursuers": []
+    },
+    "enemy": {
+      "templates": [
+        "baseActor"
+      ]
+    },
+    "npc": {
+      "templates": [
+        "baseActor"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "elements",
+      "goals"
+    ],
+    "elements": {},
+    "goals": {
+      "description": ""
+    }
+  }
+}

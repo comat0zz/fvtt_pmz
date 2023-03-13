@@ -1,0 +1,57 @@
+{
+  "CZT": {
+    "Actor": {
+      "NamePlaceholder": "Имя персонажа",
+      "Name": "Имя",
+      "Inventory": {
+        "itWeapons": "Оружие",
+        "itArmor": "Броня",
+        "itEquips": "Снаряжение",
+        "itNoWeapons": "Нет оружия",
+        "itNoArmor": "Нет брони",
+        "itNoEquips": "Нет снаряжения"
+      }
+    },
+    "Common": {
+      "Title": "",
+      "SubTitle": "",
+      "DelConfirm": "Вы точно хотите удалить это?",
+      "DelConfirmText1": ", если передумали или нажали ошибочно. Если ваше решение остаётся твердым - нажмите",
+      "DelConfirmText2": ", но вы не сможете восстановить удалённое.",
+      "Description": "Описание",
+      "Select": {
+        "Yes": "Да",
+        "No": "Нет"
+      },
+      "Buttons": {
+        "Okay": "Да",
+        "Cancel": "Отмена",
+        "Remove": "Удалить",
+        "ClickOn": "Нажмите"
+      },
+      "Navs": {
+        "Properties": "Свойства",
+        "Description": "Описание",
+        "Skills": "Навыки",
+        "ForNotes": "Для заметок"
+      }
+    },
+    "Item": {
+      "NamePlaceholder": "Введите название",
+      "Name": "Название",
+      "Weapon": {},
+      "Armor": {},
+      "Equipment": {}
+    },
+    "Rolls": {
+      "ReRoll": "Перебросить"
+    }
+  },
+  "ACTOR": {
+    "TypeHero": "Карточка игры"
+  },
+  "ITEM": {
+    "TypeElements": "Элемент",
+    "TypeGoals": "Цель"
+  }
+}
