@@ -1,0 +1,21 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <table class="czt-table">
+    <tr>
+      <td>
+        <h1>
+          <input name="name" type="text" value="{{data.name}}" placeholder="{{localize 'CZT.Item.NamePlaceholder'}}" />
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img class="item-image" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input name="system.description" type="text" value="{{systemData.description}}" placeholder="{{localize 'CZT.Common.Navs.Description'}}" />
+      </td>
+    </tr>
+  </table>
+</form>
