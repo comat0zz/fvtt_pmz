@@ -1,87 +1,91 @@
 /* Reset bases */
-.window-content .czt-wrapper .czt-row,
+.window-app .window-content,
+.message-content {
+  background: #fff;
+}
+.window-app .window-content .czt-wrapper .czt-row,
 .message-content .czt-wrapper .czt-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
-.window-content .czt-wrapper .czt-row .czt-column,
+.window-app .window-content .czt-wrapper .czt-row .czt-column,
 .message-content .czt-wrapper .czt-row .czt-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
 }
-.window-content div.editor,
+.window-app .window-content div.editor,
 .message-content div.editor {
   flex: 0 0 auto;
   width: 100%;
   height: 300px;
 }
-.window-content .czt-ul,
+.window-app .window-content .czt-ul,
 .message-content .czt-ul,
-.window-content .czt-ol,
+.window-app .window-content .czt-ol,
 .message-content .czt-ol {
   margin-top: 0;
   padding: 0;
 }
-.window-content .czt-ul li,
+.window-app .window-content .czt-ul li,
 .message-content .czt-ul li,
-.window-content .czt-ol li,
+.window-app .window-content .czt-ol li,
 .message-content .czt-ol li {
   list-style: none;
   margin-left: 0;
 }
-.window-content .czt-table,
+.window-app .window-content .czt-table,
 .message-content .czt-table {
   background: unset;
   margin: 0;
   border: none;
 }
-.window-content .czt-table tr,
+.window-app .window-content .czt-table tr,
 .message-content .czt-table tr {
   background-color: unset;
 }
-.window-content .czt-table .table-line-img,
+.window-app .window-content .czt-table .table-line-img,
 .message-content .czt-table .table-line-img {
   width: 45px;
 }
-.window-content .czt-table .table-line-img img,
+.window-app .window-content .czt-table .table-line-img img,
 .message-content .czt-table .table-line-img img {
   width: 40px;
   height: 40px;
 }
-.window-content .czt-table .table-line-name,
+.window-app .window-content .czt-table .table-line-name,
 .message-content .czt-table .table-line-name {
   padding-left: 3px;
 }
-.window-content .czt-table .table-line-control,
+.window-app .window-content .czt-table .table-line-control,
 .message-content .czt-table .table-line-control {
   width: 30px;
 }
-.window-content .czt-table .table-line-control i.fa-trash,
+.window-app .window-content .czt-table .table-line-control i.fa-trash,
 .message-content .czt-table .table-line-control i.fa-trash {
   cursor: pointer;
 }
-.window-content .czt-no-flex,
+.window-app .window-content .czt-no-flex,
 .message-content .czt-no-flex {
   flex: 0 0 auto;
 }
-.window-content .czt-style-bold-italic,
+.window-app .window-content .czt-style-bold-italic,
 .message-content .czt-style-bold-italic {
   font-weight: bold;
   font-style: italic;
 }
-.window-content .czt-style-center,
+.window-app .window-content .czt-style-center,
 .message-content .czt-style-center {
   text-align: center;
 }
-.window-content .czt-margin-bottom,
+.window-app .window-content .czt-margin-bottom,
 .message-content .czt-margin-bottom {
   margin-bottom: 3px;
 }
-.window-content .czt-float-left,
+.window-app .window-content .czt-float-left,
 .message-content .czt-float-left {
   float: left;
 }

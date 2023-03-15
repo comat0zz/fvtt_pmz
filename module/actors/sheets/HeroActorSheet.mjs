@@ -10,7 +10,7 @@ export class HeroActorSheet extends BaseActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: [game.system.id, "sheet", "actor", "actor-hero"],
-      width: 720,
+      width: 1000,
       height: 800,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "properties"}]
     });

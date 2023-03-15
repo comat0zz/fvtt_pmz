@@ -32,7 +32,48 @@
           }
         }
       },
-      "pursuers": []
+      "pursuers": {
+        "p1": {
+          "nametype": "",
+          "l1": false,
+          "l2": false,
+          "l3": false,
+          "l4": false,
+          "l5": false
+        },
+        "p2": {
+          "nametype": "",
+          "l1": false,
+          "l2": false,
+          "l3": false,
+          "l4": false,
+          "l5": false
+        },
+        "p3": {
+          "nametype": "",
+          "l1": false,
+          "l2": false,
+          "l3": false,
+          "l4": false,
+          "l5": false
+        },
+        "p4": {
+          "nametype": "",
+          "l1": false,
+          "l2": false,
+          "l3": false,
+          "l4": false,
+          "l5": false
+        },
+        "p5": {
+          "nametype": "",
+          "l1": false,
+          "l2": false,
+          "l3": false,
+          "l4": false,
+          "l5": false
+        }
+      }
     },
     "enemy": {
       "templates": ["baseActor"]

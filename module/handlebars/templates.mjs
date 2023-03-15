@@ -4,14 +4,11 @@ export const preloadHandlebarsTemplates = async function () {
 
   const templates = {
     "ItemSheets": [
-      "sheets/items/equipment-sheet.hbs",
-      "sheets/items/armor-sheet.hbs",
-      "sheets/items/weapon-sheet.hbs"
+      "sheets/items/elements-sheet.hbs",
+      "sheets/items/goals-sheet.hbs"
     ],
     "ActorSheets": [
-      "sheets/actors/hero-sheet.hbs",
-      "sheets/actors/enemy-sheet.hbs",
-      "sheets/actors/npc-sheet.hbs"
+      "sheets/actors/hero-sheet.hbs"
     ],
     "Dialogs": [
       "dialogs/modify-attrs-roll.hbs",
