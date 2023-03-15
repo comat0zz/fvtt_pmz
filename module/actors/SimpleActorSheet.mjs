@@ -38,9 +38,12 @@ export class CztActorSheet extends BaseActorSheet {
     html.find('.sheet-roll-weapon').click(evt => this._onActorRollWeapon(evt));
     html.find('.sheet-roll-attrs').click(evt => this._onActorRollAttrs(evt));
 
-    
+    html.find('.click-podhod').click(evt => this._onUserClick(evt));
   }
 
+  _onUserClick(evt) {
+    console.log(game.user)
+  }
  
   async _onActorRollWeapon(evt) {
     evt.preventDefault();

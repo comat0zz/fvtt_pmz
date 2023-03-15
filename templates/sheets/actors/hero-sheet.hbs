@@ -17,7 +17,110 @@
   <div class="tab properties" data-group="primary" data-tab="properties">
     <div class="czt-wrapper">
       <div class="czt-row">
+        <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.GameName'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center">{{localize 'CZT.Actor.SubTtile'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right">
+          <input type="text" name="system.subHeroes.hero1.name" value="{{systemData.subHeroes.hero1.name}}" />
+        </div>
+        <div class="czt-column czt-style-center style-width15">{{localize 'CZT.Actor.HeroName'}}</div>
         <div class="czt-column">
+          <input type="text" name="system.subHeroes.hero2.name" value="{{systemData.subHeroes.hero2.name}}" />
+        </div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right">
+          <input type="text" name="system.subHeroes.hero1.concept" value="{{systemData.subHeroes.hero1.concept}}" />
+        </div>
+        <div class="czt-column czt-style-center style-width15">{{localize 'CZT.Actor.Concept'}}</div>
+        <div class="czt-column">
+          <input type="text" name="system.subHeroes.hero2.concept" value="{{systemData.subHeroes.hero2.concept}}" />
+        </div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right">
+          <input type="text" name="system.subHeroes.hero1.memorabilia" value="{{systemData.subHeroes.hero1.memorabilia}}" />
+        </div>
+        <div class="czt-column czt-style-center style-width15"><span class="block-inline">{{localize 'CZT.Actor.Memorabilia'}} (+ <i class="fa-light fa-dice-six"></i>)</span></div>
+        <div class="czt-column">
+          <input type="text" name="system.subHeroes.hero2.memorabilia" value="{{systemData.subHeroes.hero2.memorabilia}}" />
+        </div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.Approaches'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center">{{localize 'CZT.Actor.ApproachesTitle'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right click-podhod" style="border: 1px solid red; border-radius: 12px;">{{localize 'CZT.Actor.BATTLE'}}</div>
+        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">{{localize 'CZT.Actor.CHARMING'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right click-podhod">{{localize 'CZT.Actor.PERSISTENT'}}</div>
+        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">{{localize 'CZT.Actor.YURKIY'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right click-podhod">{{localize 'CZT.Actor.RICH'}}</div>
+        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">{{localize 'CZT.Actor.LUCKY'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.Actions'}}</div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center">
+          <span class="block-inline">
+            <i class="fa-light fa-dice-six"></i> <i class="fa-light fa-dice-six"></i>, {{localize 'CZT.Actor.ifStep'}}, <i class="fa-light fa-dice-six"></i> {{localize 'CZT.Actor.ifStepNo'}}
+          </span>
+          </div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right"><span class="block-inline">+ <i class="fa-light fa-dice-six"></i> {{localize 'CZT.Actor.zaElement'}}</span></div>
+        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column"><span class="block-inline">- <i class="fa-light fa-dice-six"></i>  {{localize 'CZT.Actor.zaPristup'}}</span></div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column text-align-right">{{localize 'CZT.Actor.if56'}}</div>
+        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column">{{localize 'CZT.Actor.pristup1'}}</div>
+      </div>
+      
+      <div class="czt-row">
+        <div class="czt-column text-align-right">
+          <span class="block-inline">
+            {{#if systemData.subHeroes.hero1.cubeLive.c1}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c2}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c3}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c4}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c5}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+          </span>
+        </div>
+        <div class="czt-column czt-style-center block-header style-width15">{{localize 'CZT.Actor.cubeLive'}}</div>
+        <div class="czt-column">
+          <span class="block-inline">
+            {{#if systemData.subHeroes.hero2.cubeLive.c1}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c2}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c3}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c4}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c5}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+          </span>
+        </div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center"><span class="block-inline">
+          {{localize 'CZT.Actor.addCubes'}} <i class="fa-light fa-dice-six"></i>, {{localize 'CZT.Actor.addCubes2'}}.<br>
+          {{localize 'CZT.Actor.addCubes3'}} <i class="fa-light fa-dice-six"></i>, {{localize 'CZT.Actor.addCubes4'}}
+        </span></div>
+      </div>
+      <div class="czt-row">
+        <div class="czt-column czt-style-center"><span class="block-inline">
+          {{localize 'CZT.Actor.addCubes5'}} <i class="fa-light fa-dice-six"></i> {{localize 'CZT.Actor.addCubes6'}}
         </div>
       </div>
     </div>
@@ -28,10 +131,10 @@
         <div class="czt-column"><h2>{{localize 'CZT.Actor.Master.Title'}}</h2></div>
       </div>
       <div class="czt-row">
-        <div class="czt-column">
+        <div class="czt-column side-block">
           <div class="item-block">
-            {{localize 'CZT.Actor.Master.SubTitle'}}
-            <ul>
+            <b>{{localize 'CZT.Actor.Master.SubTitle'}}</b>
+            <ul class="help-list">
               <li>{{localize 'CZT.Actor.Master.List1'}}</li>
               <li>{{localize 'CZT.Actor.Master.List2'}}</li>
               <li>{{localize 'CZT.Actor.Master.List3'}}</li>
@@ -43,8 +146,8 @@
             </ul>
           </div>
           <div class="item-block">
-            {{localize 'CZT.Actor.Master.Proncips'}}
-            <ul>
+            <b>{{localize 'CZT.Actor.Master.Proncips'}}</b>
+            <ul class="help-list">
               <li>{{localize 'CZT.Actor.Master.pList1'}}</li>
               <li>{{localize 'CZT.Actor.Master.pList2'}}</li>
               <li>{{localize 'CZT.Actor.Master.pList3'}}</li>
@@ -56,16 +159,16 @@
         </div>
         <div class="czt-column">
           <div class="item-block">
-            {{localize 'CZT.Actor.Master.oPresl'}}
+            <b>{{localize 'CZT.Actor.Master.oPresl'}}</b>
             <p>{{localize 'CZT.Actor.Master.iPreslText1'}}</p>
             <p>{{localize 'CZT.Actor.Master.iPreslText2'}}</p>
           </div>
           <div class="item-block">
-            {{localize 'CZT.Actor.Master.listPresl'}}
-            <ul class="czt-ul">
+            <b>{{localize 'CZT.Actor.Master.listPresl'}}</b>
+            <ul class="czt-ul block-presl">
               <li>
                 <div class="czt-row">
-                  <div class="czt-column master-label-block">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
+                  <div class="czt-column master-label-block text-to-down">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
                   <div class="czt-column">
                     <input name="system.pursuers.p1.nametype" type="text" value="{{systemData.pursuers.p1.nametype}}" />
                   </div>
@@ -85,7 +188,7 @@
               </li>
               <li>
                 <div class="czt-row">
-                  <div class="czt-column master-label-block">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
+                  <div class="czt-column master-label-block text-to-down">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
                   <div class="czt-column">
                     <input name="system.pursuers.p2.nametype" type="text" value="{{systemData.pursuers.p2.nametype}}" />
                   </div>
@@ -105,7 +208,7 @@
               </li>
               <li>
                 <div class="czt-row">
-                  <div class="czt-column master-label-block">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
+                  <div class="czt-column master-label-block text-to-down">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
                   <div class="czt-column">
                     <input name="system.pursuers.p3.nametype" type="text" value="{{systemData.pursuers.p3.nametype}}" />
                   </div>
@@ -125,7 +228,7 @@
               </li>
               <li>
                 <div class="czt-row">
-                  <div class="czt-column master-label-block">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
+                  <div class="czt-column master-label-block text-to-down">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
                   <div class="czt-column">
                     <input name="system.pursuers.p4.nametype" type="text" value="{{systemData.pursuers.p4.nametype}}" />
                   </div>
@@ -145,7 +248,7 @@
               </li>
               <li>
                 <div class="czt-row">
-                  <div class="czt-column master-label-block">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
+                  <div class="czt-column master-label-block text-to-down">{{localize 'CZT.Actor.Master.nameAndType'}}</div>
                   <div class="czt-column">
                     <input name="system.pursuers.p5.nametype" type="text" value="{{systemData.pursuers.p5.nametype}}" />
                   </div>
@@ -167,6 +270,10 @@
           </div>
         </div>
       </div>
+  
+  <!-- Goals panel here -->
+
+
     </div>
   </div>
 </section>

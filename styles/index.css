@@ -97,3 +97,56 @@
 }
 /* Items Sheet */
 /* Actors Sheet */
+.window-app.sheet.actor .window-content .text-to-down {
+  padding-top: 5px;
+}
+.window-app.sheet.actor .window-content .master-label-block {
+  flex: 0 0 auto;
+  width: 15%;
+  align-items: baseline;
+}
+.window-app.sheet.actor .window-content p {
+  text-indent: 3ch;
+}
+.window-app.sheet.actor .window-content .side-block {
+  padding-right: 5px;
+}
+.window-app.sheet.actor .window-content input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #fff;
+}
+.window-app.sheet.actor .window-content .block-presl li {
+  margin-top: 10px;
+}
+.window-app.sheet.actor .window-content .block-presl li:first-child {
+  margin: 0;
+}
+.window-app.sheet.actor .window-content .help-list li {
+  margin-bottom: 7px;
+}
+.window-app.sheet.actor .window-content .style-width10-center {
+  flex: 0 0 auto;
+  width: 5%;
+  text-align: center;
+}
+.window-app.sheet.actor .window-content .text-align-right {
+  text-align: right;
+}
+.window-app.sheet.actor .window-content .properties .czt-row {
+  margin-top: 10px;
+}
+.window-app.sheet.actor .window-content .properties .block-inline {
+  flex: 0 0 auto;
+}
+.window-app.sheet.actor .window-content .properties .fonst-size-30 {
+  font-size: 30px;
+}
+.window-app.sheet.actor .window-content .properties .block-header {
+  font-weight: bold;
+}
+.window-app.sheet.actor .window-content .properties .style-width15 {
+  flex: 0 0 auto;
+  width: 20%;
+  align-self: center;
+}

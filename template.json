@@ -15,7 +15,13 @@
           "name": "",
           "concept": "",
           "memorabilia": "",
-          "cubeLive": 5,
+          "cubeLive": {
+            "c1": true,
+            "c2": true,
+            "c3": true,
+            "c4": true,
+            "c5": true
+          },
           "goals": {
             "one": "",
             "two": ""
@@ -25,12 +31,26 @@
           "name": "",
           "concept": "",
           "memorabilia": "",
-          "cubeLive": 5,
+          "cubeLive": {
+            "c1": true,
+            "c2": true,
+            "c3": true,
+            "c4": true,
+            "c5": true
+          },
           "goals": {
             "one": "",
             "two": ""
           }
         }
+      },
+      "approaches": {
+        "BATTLE": "",
+        "CHARMING": "",
+        "PERSISTENT": "",
+        "YURKIY": "",
+        "RICH": "",
+        "LUCKY": ""
       },
       "pursuers": {
         "p1": {
