@@ -17,12 +17,13 @@
   <div class="tab properties" data-group="primary" data-tab="properties">
     <div class="czt-wrapper">
       <div class="czt-row">
-        <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.GameName'}}</div>
+        <div class="czt-column czt-style-center game-name">{{localize 'CZT.Actor.GameName'}}</div>
       </div>
       <div class="czt-row">
         <div class="czt-column czt-style-center">{{localize 'CZT.Actor.SubTtile'}}</div>
       </div>
       <div class="czt-row">
+        <div class="czt-column"></div>
         <div class="czt-column text-align-right">
           <input type="text" name="system.subHeroes.hero1.name" value="{{systemData.subHeroes.hero1.name}}" />
         </div>
@@ -30,8 +31,10 @@
         <div class="czt-column">
           <input type="text" name="system.subHeroes.hero2.name" value="{{systemData.subHeroes.hero2.name}}" />
         </div>
+        <div class="czt-column"></div>
       </div>
       <div class="czt-row">
+        <div class="czt-column"></div>
         <div class="czt-column text-align-right">
           <input type="text" name="system.subHeroes.hero1.concept" value="{{systemData.subHeroes.hero1.concept}}" />
         </div>
@@ -39,8 +42,10 @@
         <div class="czt-column">
           <input type="text" name="system.subHeroes.hero2.concept" value="{{systemData.subHeroes.hero2.concept}}" />
         </div>
+        <div class="czt-column"></div>
       </div>
       <div class="czt-row">
+        <div class="czt-column"></div>
         <div class="czt-column text-align-right">
           <input type="text" name="system.subHeroes.hero1.memorabilia" value="{{systemData.subHeroes.hero1.memorabilia}}" />
         </div>
@@ -48,6 +53,7 @@
         <div class="czt-column">
           <input type="text" name="system.subHeroes.hero2.memorabilia" value="{{systemData.subHeroes.hero2.memorabilia}}" />
         </div>
+        <div class="czt-column"></div>
       </div>
       <div class="czt-row">
         <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.Approaches'}}</div>
@@ -56,19 +62,55 @@
         <div class="czt-column czt-style-center">{{localize 'CZT.Actor.ApproachesTitle'}}</div>
       </div>
       <div class="czt-row">
-        <div class="czt-column text-align-right click-podhod" style="border: 1px solid red; border-radius: 12px;">{{localize 'CZT.Actor.BATTLE'}}</div>
-        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
-        <div class="czt-column click-podhod">{{localize 'CZT.Actor.CHARMING'}}</div>
+        <div class="czt-column text-align-right click-podhod">
+            <span class="approach-block appr-block-left" 
+              appr-id="BATTLE"
+              {{#if systemData.approaches.BATTLE}} style="border: 3px solid {{systemData.approaches.BATTLE}};"{{/if}}>
+            {{localize 'CZT.Actor.BATTLE'}}
+            </span>
+          </div>
+        <div class="czt-column style-width10-center padding-top"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">
+          <span class="approach-block" 
+            appr-id="CHARMING"
+            {{#if systemData.approaches.CHARMING}} style="border: 3px solid {{systemData.approaches.CHARMING}};"{{/if}}>
+          {{localize 'CZT.Actor.CHARMING'}}
+          </span>  
+        </div>
       </div>
       <div class="czt-row">
-        <div class="czt-column text-align-right click-podhod">{{localize 'CZT.Actor.PERSISTENT'}}</div>
-        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
-        <div class="czt-column click-podhod">{{localize 'CZT.Actor.YURKIY'}}</div>
+        <div class="czt-column text-align-right click-podhod">
+          <span class="approach-block appr-block-left" 
+            appr-id="PERSISTENT"
+            {{#if systemData.approaches.PERSISTENT}} style="border: 3px solid {{systemData.approaches.PERSISTENT}};"{{/if}}>
+            {{localize 'CZT.Actor.PERSISTENT'}}
+          </span>
+        </div>
+        <div class="czt-column style-width10-center padding-top"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">
+          <span class="approach-block" 
+            appr-id="YURKIY"
+            {{#if systemData.approaches.YURKIY}} style="border: 3px solid {{systemData.approaches.YURKIY}};"{{/if}}>
+            {{localize 'CZT.Actor.YURKIY'}}
+          </span>
+        </div>
       </div>
       <div class="czt-row">
-        <div class="czt-column text-align-right click-podhod">{{localize 'CZT.Actor.RICH'}}</div>
-        <div class="czt-column style-width10-center"><i class="fa-solid fa-circle"></i></div>
-        <div class="czt-column click-podhod">{{localize 'CZT.Actor.LUCKY'}}</div>
+        <div class="czt-column text-align-right click-podhod">
+          <span class="approach-block appr-block-left" 
+            appr-id="RICH"
+            {{#if systemData.approaches.RICH}} style="border: 3px solid {{systemData.approaches.RICH}};"{{/if}}>
+            {{localize 'CZT.Actor.RICH'}}
+          </span>
+        </div>
+        <div class="czt-column style-width10-center padding-top"><i class="fa-solid fa-circle"></i></div>
+        <div class="czt-column click-podhod">
+          <span class="approach-block" 
+            appr-id="LUCKY"
+            {{#if systemData.approaches.LUCKY}} style="border: 3px solid {{systemData.approaches.LUCKY}};"{{/if}}>
+            {{localize 'CZT.Actor.LUCKY'}}
+          </span>
+        </div>
       </div>
       <div class="czt-row">
         <div class="czt-column czt-style-center block-header">{{localize 'CZT.Actor.Actions'}}</div>
@@ -93,22 +135,22 @@
       
       <div class="czt-row">
         <div class="czt-column text-align-right">
-          <span class="block-inline">
-            {{#if systemData.subHeroes.hero1.cubeLive.c1}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero1.cubeLive.c2}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero1.cubeLive.c3}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero1.cubeLive.c4}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero1.cubeLive.c5}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+          <span class="block-inline" hero-id="hero1">
+            {{#if systemData.subHeroes.hero1.cubeLive.c1}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c1"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c1"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c2}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c2"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c2"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c3}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c3"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c3"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c4}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c4"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c4"></i>{{/if}}
+            {{#if systemData.subHeroes.hero1.cubeLive.c5}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c5"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c5"></i>{{/if}}
           </span>
         </div>
         <div class="czt-column czt-style-center block-header style-width15">{{localize 'CZT.Actor.cubeLive'}}</div>
         <div class="czt-column">
-          <span class="block-inline">
-            {{#if systemData.subHeroes.hero2.cubeLive.c1}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero2.cubeLive.c2}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero2.cubeLive.c3}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero2.cubeLive.c4}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
-            {{#if systemData.subHeroes.hero2.cubeLive.c5}}<i class="fa-solid fa-dice-six fonst-size-30"></i>{{else}}<i class="fa-light fa-dice-six fonst-size-30"></i>{{/if}}
+          <span class="block-inline" hero-id="hero2">
+            {{#if systemData.subHeroes.hero2.cubeLive.c1}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c1"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c1"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c2}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c2"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c2"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c3}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c3"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c3"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c4}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c4"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c4"></i>{{/if}}
+            {{#if systemData.subHeroes.hero2.cubeLive.c5}}<i class="click-cube-live fa-solid fa-dice-six fonst-size-30" item-id="c5"></i>{{else}}<i class="click-cube-live fa-light fa-dice-six fonst-size-30" item-id="c5"></i>{{/if}}
           </span>
         </div>
       </div>

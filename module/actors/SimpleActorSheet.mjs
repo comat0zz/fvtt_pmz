@@ -38,11 +38,29 @@ export class CztActorSheet extends BaseActorSheet {
     html.find('.sheet-roll-weapon').click(evt => this._onActorRollWeapon(evt));
     html.find('.sheet-roll-attrs').click(evt => this._onActorRollAttrs(evt));
 
-    html.find('.click-podhod').click(evt => this._onUserClick(evt));
+    html.find('.approach-block').click(evt => this._onApprClick(evt));
+    html.find('.click-cube-live').click(evt => this._onCubeClick(evt));
   }
 
-  _onUserClick(evt) {
-    console.log(game.user)
+  _onCubeClick(evt) {
+    evt.preventDefault();
+    const hero_id = $(evt.currentTarget).closest('span').attr('hero-id');
+    const cube_id = $(evt.currentTarget).attr('item-id');
+    let subHeroes = duplicate(this.actor.system.subHeroes);
+    subHeroes[hero_id].cubeLive[cube_id] = !subHeroes[hero_id].cubeLive[cube_id];
+    this.actor.update({ "system.subHeroes" : subHeroes } );
+  }
+
+  _onApprClick(evt) {
+    evt.preventDefault();
+    const appr_id = $(evt.currentTarget).closest('span').attr('appr-id');
+    let approaches = duplicate(this.actor.system.approaches);
+    if(approaches[appr_id] != game.user.color) {
+      approaches[appr_id] = game.user.color;
+    }else{
+      approaches[appr_id] = "";
+    }
+    this.actor.update({ "system.approaches" : approaches } );
   }
  
   async _onActorRollWeapon(evt) {

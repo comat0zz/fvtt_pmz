@@ -2,6 +2,7 @@
 .window-app .window-content,
 .message-content {
   background: #fff;
+  font-family: 'Lora-Regular';
 }
 .window-app .window-content .czt-wrapper .czt-row,
 .message-content .czt-wrapper .czt-row {
@@ -95,8 +96,30 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Lora-Bold';
+  src: local('Lora-Bold'), url('./fonts/Lora-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lora-Regular';
+  src: local('Lora'), local('Lora-Regular'), url('./fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'segoesc';
+  src: local('segoesc'), url('./fonts/segoesc.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 /* Items Sheet */
 /* Actors Sheet */
+.window-app.sheet.actor .window-content .game-name {
+  font-family: 'segoesc';
+  font-size: 60px;
+}
 .window-app.sheet.actor .window-content .text-to-down {
   padding-top: 5px;
 }
@@ -107,6 +130,23 @@
 }
 .window-app.sheet.actor .window-content p {
   text-indent: 3ch;
+}
+.window-app.sheet.actor .window-content .click-cube-live {
+  cursor: pointer;
+}
+.window-app.sheet.actor .window-content .approach-block {
+  flex: 0 0 auto;
+  padding: 7px 13px 7px 17px;
+  width: 200px;
+  cursor: pointer;
+  border: 3px solid var(--color-text-light-1);
+  border-radius: 20px;
+}
+.window-app.sheet.actor .window-content .padding-top {
+  padding-top: 10px;
+}
+.window-app.sheet.actor .window-content .appr-block-left {
+  margin-left: auto;
 }
 .window-app.sheet.actor .window-content .side-block {
   padding-right: 5px;
