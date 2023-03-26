@@ -19,7 +19,7 @@ import { CztActor } from "./actors/SimpleActor.mjs";
 
 Hooks.once("init", function () {
   
-  game.logger = new CztUtility.Log(true);
+  game.logger = new CztUtility.Log(false);
 
   CONFIG.CZT = CZT;
   // Необходимо для вызова шаблонов из кода
