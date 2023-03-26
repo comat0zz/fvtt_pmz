@@ -40,7 +40,7 @@
   "socket": true,
   "gridDistance": 1,
   "gridUnits": "m",
-  "url": "https://github.com/comat0zz/pmz",
-  "manifest": "https://github.com/comat0zz/pmz/releases/latest/download/system.json",
-  "download": "https://github.com/comat0zz/pmz/releases/latest/download/pmz.zip"
+  "url": "https://github.com/comat0zz/fvtt_pmz",
+  "manifest": "https://github.com/comat0zz/fvtt_pmz/releases/latest/download/system.json",
+  "download": "https://github.com/comat0zz/fvtt_pmz/releases/latest/download/pmz.zip"
 }
