@@ -209,10 +209,38 @@
       </div>
       <div class="czt-row">
         <div class="czt-column text-align-right">
-
+          <table class="czt-table list-goals" hero-id="hero1">
+            <tr>
+          {{#each systemData.subHeroes.hero1.goals as |item key|}}
+            <td item-id="{{item.id}}">
+              <span class="goal-delete"><i class="fa-solid fa-trash"></i></span>
+              <span class="goal-name">{{item.name}}</span>
+              <div>
+                
+                <img src="{{item.img}}" class="goal-item">
+              </div>
+              {{item.desc}}
+            </td>
+          {{/each}}
+          </tr></table>
         </div>
         <div class="czt-column element-border">{{localize 'CZT.Actor.HelpGoals'}}</div>
-        <div class="czt-column"></div>
+        <div class="czt-column">
+          <table class="czt-table list-goals" hero-id="hero2">
+            <tr>
+          {{#each systemData.subHeroes.hero2.goals as |item key|}}
+            <td item-id="{{item.id}}">
+              <span class="goal-delete"><i class="fa-solid fa-trash"></i></span>
+              <span class="goal-name">{{item.name}}</span>
+              <div>
+                
+                <img src="{{item.img}}" class="goal-item">
+              </div>
+              {{item.desc}}
+            </td>
+          {{/each}}
+          </tr></table>
+        </div>
       </div>
     </div>
   </div>
