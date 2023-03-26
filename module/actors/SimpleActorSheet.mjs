@@ -1,5 +1,5 @@
 import { BaseActorSheet } from "./BaseActorSheet.mjs";
-
+import * as CztUtility from "../utilities/_module.mjs";
 
 /**
  * Extend the base Actor document to support attributes and groups with a custom template creation dialog.
@@ -13,7 +13,13 @@ export class CztActorSheet extends BaseActorSheet {
       classes: [game.system.id, "sheet", "actor", "actor-simple"],
       width: 1000,
       height: 800,
-      tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "properties"}]
+      tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "properties"}],
+      dragDrop: [
+        {
+          dropSelector: ".actor-items-equipment", 
+          dragSelector: ".item"
+        }
+      ]
     });
   }
 
@@ -146,5 +152,23 @@ export class CztActorSheet extends BaseActorSheet {
       new Dialog(data, null).render(true);
     });
   }
-
+  /** @override */
+  async _onDrop(evt) { 
+    evt.preventDefault();
+    const dragData = JSON.parse(evt.dataTransfer.getData("text/plain"));
+    const typeHero = $(evt.currentTarget).closest('.actor-items-equipment').attr('hero-id');
+    if(dragData.type != 'Item') return;
+    const Item = await CztUtility.extractItem(dragData);
+    if(Item.type != 'elements') return;
+    let elements = duplicate(this.actor.system.subHeroes[typeHero].elements);
+    elements.push(
+      {
+        "id": randomID(),
+        "name": Item.name,
+        "item_id": Item._id,
+        "img": Item.img
+      }
+    );
+    await this.actor.update({ [`system.subHeroes.${typeHero}.elements`] : elements } );
+  }
 }

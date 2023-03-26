@@ -15,6 +15,7 @@
           "name": "",
           "concept": "",
           "memorabilia": "",
+          "elements": [],
           "cubeLive": {
             "c1": true,
             "c2": true,
@@ -22,15 +23,13 @@
             "c4": true,
             "c5": true
           },
-          "goals": {
-            "one": "",
-            "two": ""
-          }
+          "goals": []
         },
         "hero2": {
           "name": "",
           "concept": "",
           "memorabilia": "",
+          "elements": [],
           "cubeLive": {
             "c1": true,
             "c2": true,
@@ -38,10 +37,7 @@
             "c4": true,
             "c5": true
           },
-          "goals": {
-            "one": "",
-            "two": ""
-          }
+          "goals": []
         }
       },
       "approaches": {

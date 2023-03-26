@@ -11,26 +11,25 @@ export class BaseActorSheet extends ActorSheet {
 
     html.find('.actor-item-remove').click(evt => this._onActorItemRemove(evt));
   }
-
-  /** @override */
-  async _onDrop(evt) { 
-    evt.preventDefault();
-    const dragData = JSON.parse(evt.dataTransfer.getData("text/plain"));
   
-    if(dragData.type != "Item") return;
+  async _deleteItem(item_id, hero_id) {
+    console.log(item_id, hero_id);
+    const elements = duplicate(this.actor.system.subHeroes[hero_id].elements);
+    let elmnts = [];
 
-    var item = await CztUtility.extractItem(dragData);
-    await this.actor.createEmbeddedDocuments("Item", [{
-      "name": item.name,
-      "img": item.img,
-      "type": item.type,
-      "system.orig_id": item._id
-    }]);
+    elements.forEach(element => {
+      if(element.id != item_id) {
+        elmnts.push(element)
+      }
+    });
+
+    await this.actor.update({ [`system.subHeroes.${hero_id}.elements`] : elmnts } );
   }
 
   async _onActorItemRemove(evt) {
     evt.preventDefault();
     const item_id = $(evt.currentTarget).closest('.actor-items-single').attr('item-id');
+    const hero_id = $(evt.currentTarget).closest('.actor-items-equipment').attr('hero-id');
     const tpl = await renderTemplate(`${game.system_path}/templates/dialogs/actor-item-remove.hbs`);
     return new Promise(resolve => {
       const data = {
@@ -45,7 +44,7 @@ export class BaseActorSheet extends ActorSheet {
           yes: {
             icon: '<i class="fas fa-check"></i>',
             label: game.i18n.localize("CZT.Common.Buttons.Remove"),
-            callback: html => resolve(this.actor.deleteEmbeddedDocuments("Item", [item_id]))
+            callback: html => resolve(this._deleteItem(item_id, hero_id))
            }        
         },
         default: "cancel",

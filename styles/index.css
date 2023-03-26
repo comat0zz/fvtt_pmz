@@ -134,6 +134,12 @@
 .window-app.sheet.actor .window-content .click-cube-live {
   cursor: pointer;
 }
+.window-app.sheet.actor .window-content .element-border {
+  flex: 0 0 auto;
+  width: 20%;
+  padding: 0 7px 0 7px;
+  text-align: center;
+}
 .window-app.sheet.actor .window-content .approach-block {
   flex: 0 0 auto;
   padding: 7px 13px 7px 17px;
@@ -164,6 +170,17 @@
 }
 .window-app.sheet.actor .window-content .help-list li {
   margin-bottom: 7px;
+}
+.window-app.sheet.actor .window-content .put-goals {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.window-app.sheet.actor .window-content .actor-items-equipment {
+  height: 100%;
+}
+.window-app.sheet.actor .window-content .actor-items-equipment td {
+  vertical-align: top;
+  height: 20px;
 }
 .window-app.sheet.actor .window-content .style-width10-center {
   flex: 0 0 auto;
